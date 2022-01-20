@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run: >
+          docker build -t name-easy-api:$CIRCLE_BRANCH .
+      - run: ssh root@$SSH_ADDR docker system prune -a -f
+      - run: docker save name-easy-api:${CIRCLE_BRANCH} | ssh -C root@$SSH_ADDR docker load
+      - run: ssh root@$SSH_ADDR "docker rm -f name-easy-api || true"
+      - run: ssh root@$SSH_ADDR docker run --restart=always --name name-easy-api -d -v /root/log:/usr/src/app/log -p 127.0.0.1:11100:11100 name-easy-api:$CIRCLE_BRANCH
+workflows:
+  version: 2
+  build-and-deploy-bot:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: premier

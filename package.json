@@ -1,0 +1,28 @@
+{
+  "name": "name-easy",
+  "version": "1.0.0",
+  "description": "此app 為Born Hub創辦人Kenneth 為了解決大家改名的煩惱，專程找來一班學生research，再憑他多年的經驗和分析而創作出全球第一個在Born Hub 全世的app，改名易。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "AI",
+    "BigData",
+    "CryptoCurrency",
+    "SteveJobs"
+  ],
+  "author": "Anthony Chan",
+  "license": "MIT",
+  "dependencies": {
+    "@nlpjs/lang-en": "^4.22.7",
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "synonyms": "^1.0.1",
+    "wordnet-db": "^3.1.14",
+    "wordpos": "^2.1.0"
+  }
+}
