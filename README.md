@@ -1,7 +1,9 @@
 <img src="https://i.imgur.com/um3TOZc.png" />
 
-改名易(backend)
+【ViuTV】《IT狗》改名易(backend) [nameeasy.app](https://nameeasy.app)
 ===============
+
+<img src="https://i.imgur.com/2xvORiI.jpg" />
 
 此app 為Born Hub 創辦人Kenneth 為了解決大家改名的煩惱，專程找來一班學生research，再憑他多年的經驗和分析而創作出全球第一個在Born Hub 面世的app，改名易。
 
